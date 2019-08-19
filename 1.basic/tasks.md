@@ -28,6 +28,8 @@ db.TT.renameCollection("tenis")
 
 7. create a capped collection called `khokho` which should have max 3 documents.
   Try inserting more than 3 and output the result here ?
+db.createcollection("khokho",{capped:true, size:44600,max-size:3})
+true
 
 8. check whether a collection is capped or not?
 db.khokho.isCapped()
