@@ -41,7 +41,10 @@ db.football.removes({})
 db.cricket.drop()
 
 11. rename database sports to games
-
+use sports
+copyDatabase("sports","games");
+use sports
+dropDatabase();
 12. delete sports database. 
 
 db.dropDatabase()
