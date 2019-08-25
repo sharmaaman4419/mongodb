@@ -46,5 +46,4 @@ copyDatabase("sports","games");
 use sports
 dropDatabase();
 12. delete sports database. 
-
 db.dropDatabase()
