@@ -1,15 +1,20 @@
 1. Create a database named `blog`.
  use blog
+
 2. Create a collection called 'articles'.
 db.createCollection("articles")
+
 3. Insert multiple documents(at least 3) into articles. It should have fields
 db.articles.insert({name:"abc",email:"xyz",hobby:"games"})
+
 4. Find all the articles using `db.COLLECTION_NAME.find()`
 db.article.find()
-5. Find a document using _id field.
-db.article.find({_id:5d6241f75552eb29ed285eb4})
-6. Find documents using title and author's name field.
 
+5. Find a document using _id field.
+db.article.find({ObjectId("5d6241f75552eb29ed285eb4")})
+
+6. Find documents using title and author's name field.
+db.article.find({name:"aman",_id:0})
 7. Find document using a specific tag.
 
 8. Update title of a document using its _id field.
